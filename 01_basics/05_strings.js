@@ -6,13 +6,17 @@
 
 
 */
+//run :- node .\01_basics\05_strings.js 
+// or 
+//cd .\01_basics
+// node 05_strings.js
 
 
 const name = "Akash "
 const repoCount = 50
 //adding & print
 console.log(name + repoCount + " Value");
-// Backticks Print
+// Backticks Print:- dynamic data 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('akash-ac-com')

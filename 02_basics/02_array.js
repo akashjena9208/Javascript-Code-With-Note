@@ -10,7 +10,7 @@ console.log("................Concart..............................");
 //Combines two or more arrays. This method returns a new array without modifying any existing arrays. 
 // limitation only one time  but spred operator 
 
-const allHeros = marvel_heros.concat(dc_heros)
+const allHeros = marvel_heros.concat(dc_heros) //useing concat merge 2 array 
 console.log(allHeros);
 //or
 console.log("....................Spead operator..........................");
@@ -20,9 +20,10 @@ const all_new_heros = [...marvel_heros, ...dc_heros]
 
 
 // all are combine single array
- const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]] //array inside array  how  to handel 
 //Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
-const real_another_array = another_array.flat(Infinity)
+const real_another_array = another_array.flat(Infinity) // flat(Infinity) tells JavaScript to recursively flatten all levels of nesting - The result is a single-level array  like [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
+
 console.log(real_another_array);
 console.log("...............Data scrpting ...............................");
 

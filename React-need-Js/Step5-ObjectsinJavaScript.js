@@ -47,8 +47,23 @@ let student = {
   }
 };
 
-console.log(student);
+console.log(student);//{ name: 'Riya', marks: { math: 90, english: 85 } }
 console.log(student.marks.math); // 90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

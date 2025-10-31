@@ -75,16 +75,18 @@ console.log(loginUserMessage("Akash")) //set name
 
 console.log("........................seprated/Rest Operator..............................");
 //Rest operator :- Function multiplue value are pass & returen array format
-function calculateCartPricee(...num1){
+function calculateCartPricee(...num1){  //rcv lots of data  //function tcv lots iteam  store as from array
     return num1
 }
-console.log(calculateCartPricee(200, 400, 500, 2000))
+console.log(calculateCartPricee(200, 400, 500, 2000)) //send  lots of  data //i cart many item
+//[ 200, 400, 500, 2000 ]
+
 
 //spraed operator
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){ // in here vale1=200 and value2=200 other array store inside array
     return num1
 }
-
+//op:-[ 500, 2000 ]
 console.log(calculateCartPrice(200, 400, 500, 2000))
 
 console.log(".........................Function Pass  a  Object..................................");
@@ -95,8 +97,8 @@ const user = {
 }
                         //user only thid   or anyobject
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);  //op:-Username is hitesh and price is 199
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`); //bcz you dont pass so undefind so typesafty cheacked //op-Username is hitesh and price is undefined
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);  //op:-Username is hitesh and price is 199 object inside all prestant
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`); //bcz you do not pass so undefind so typesafty cheacked //op-Username is hitesh and price is undefined   bcz insode that is price not prices so
 }
 handleObject(user)
 

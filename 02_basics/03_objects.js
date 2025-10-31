@@ -50,5 +50,5 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 console.log(JsUser.greeting);   //undefind 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting()); // Hello JS user  undefined
+console.log(JsUser.greetingTwo());// Hello JS user, Akash    undefined

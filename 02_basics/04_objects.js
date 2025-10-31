@@ -109,8 +109,53 @@ const {courseInstructor}/*name big so chaged the name*/ = course //where value e
     //which value extract{ }                            =  where  value extract
 console.log(courseInstructor);
 const {courseInstructor: instructor} = course
-    // name big so chaged the name
+    // name big so we can chaged the name
 console.log(instructor);
+
+
+// const navbar= ()=>
+// {
+
+// }
+// navbar(companyname= "Akash pvt ltd")
+
+//in react  by defult propes presant only understnd propuse // ❌ wrong syntax  // ❌ wrong way to pass props in this example
+
+                        // const navbar= (props.companyname) = >
+                        // {
+                        // }
+                        // navbar(companyname= "Akash pvt ltd")
+
+
+ //instce of we not write type write  to destrure way 
+                        // const navbar= ({companyname}) = >  
+                        // {
+                        // }
+                        // navbar(companyname= "Akash pvt ltd")   
+
+// ...................................correct way  
+// Basic Example
+function Navbar(props) {
+  return <h1>Welcome to {props.companyName}</h1>;
+}
+export default function App() {
+  return <Navbar companyName="Akash Pvt Ltd" />;
+}
+
+//Using Destructuring (Cleaner way)
+function Navbar({ companyName }) {
+  return <h1>Welcome to {companyName}</h1>;
+}
+export default function App() {
+  return <Navbar companyName="Akash Pvt Ltd" />;
+}
+
+
+
+
+
+///Same destruced used  used array  also 
+
 
 /* Api  write 
 no write any thing , object write value  both key & value are String

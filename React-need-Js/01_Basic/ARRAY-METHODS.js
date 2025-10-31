@@ -52,3 +52,16 @@ console.log([1,2,3,4].copyWithin(2,0,2));      // [1,2,1,2] → copy first 2 ite
 // ✅ FLAT & FLATMAP
 console.log([1,[2,[3]]].flat(2));              // [1,2,3] → flatten nested arrays
 console.log([1,2,3].flatMap(x => [x, x*2]));   // [1,2,2,4,3,6] → map + flatten
+
+
+
+//Most frequently used methods when building real-world React apps  in Array 
+arr.map()       // For rendering lists → JSX
+arr.filter()    // For filtering displayed data
+arr.find()      // For finding item details
+arr.some()      // For conditional rendering
+arr.every()     // For validation checks
+arr.slice()     // For pagination
+// Spread operator (not method)
+let newArr = [...arr]; // Copy or merge arrays
+

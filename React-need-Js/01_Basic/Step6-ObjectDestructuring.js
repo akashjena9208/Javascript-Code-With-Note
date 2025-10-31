@@ -40,9 +40,13 @@ console.log(math); // 95
 console.log("------------------------------------Spread Operator (...)------------------------------------------------------");
 const person = { name: "Akash", age: 22 };
 console.log(person);
-const updatednotPerson = {person, city: "Delhi" };
-const updatedPerson = { ...person, city: "Delhi" };
-console.log(updatednotPerson);//{ name: 'Akash', age: 22, city: 'Delhi' }
+const updatednotPerson = {person, city: "Delhi" };// here we don't used 
+const updatedPerson = { ...person, city: "Delhi" }; //here we used 
+console.log(updatednotPerson);//{ person: { name: 'Akash', age: 22 }, city: 'Delhi' }
 console.log(updatedPerson);//{ name: 'Akash', age: 22, city: 'Delhi' }
+
+//inreact setUser({ ...user, age: 23 });   This updates only the age property without touching the others.
+
+
 
 
